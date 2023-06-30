@@ -1,0 +1,38 @@
+{
+  "name": "maka-task",
+  "version": "1.0.0",
+  "description": "Maka back-end task",
+  "main": "main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/server.js",
+    "start:dev": "npx ts-node-dev src/server.ts",
+    "test": "jest"
+  },
+  "author": "Abolaji Oyerinde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^7.0.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@golevelup/ts-jest": "^0.3.7",
+    "@types/express": "^4.17.1",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.2",
+    "@types/sequelize": "^4.28.15",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.4.3",
+    "node-mocks-http": "^1.11.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
